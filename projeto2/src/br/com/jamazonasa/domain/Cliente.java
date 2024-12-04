@@ -1,6 +1,6 @@
 package br.com.jamazonasa.domain;
 
-public class Cliente {
+public class Cliente implements Persistente {
 
     private String nome;
 

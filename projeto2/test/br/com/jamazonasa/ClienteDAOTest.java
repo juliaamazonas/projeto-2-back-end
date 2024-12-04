@@ -55,4 +55,11 @@ public class ClienteDAOTest {
 
     }
 
+    @Test
+    public void alterarCliente() {
+        cliente.setNome("Rodrigo Pires");
+        clienteDao.alterar(cliente);
+        Assert.assertEquals("Rodrigo Pires", cliente.getNome());
+    }
+
 }

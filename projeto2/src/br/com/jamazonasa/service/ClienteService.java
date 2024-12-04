@@ -32,4 +32,9 @@ public class ClienteService implements IClienteService {
     public void excluir(long cpf) {
 
     }
+
+    @Override
+    public void alterar(Cliente cliente) {
+        clienteDao.alterar(cliente);
+    }
 }
